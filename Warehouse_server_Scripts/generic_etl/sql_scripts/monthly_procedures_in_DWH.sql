@@ -1,0 +1,1 @@
+call tjsitestats.prc_generate_monthly_stat_master(201605);

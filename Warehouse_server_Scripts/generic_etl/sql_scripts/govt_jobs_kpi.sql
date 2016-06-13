@@ -1,0 +1,1 @@
+call tjsitestats.prc_generate_daily_tjcorp_param_stat_2_InDate(current_date);

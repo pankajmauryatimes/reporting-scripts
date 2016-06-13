@@ -1,0 +1,109 @@
+#1/bin/bash
+
+set +x
+cd /tmp/DATAREQUEST
+call_by_datareport=$1
+ip=192.168.206.142
+user=dwhuser
+pswd=dwhpass
+ftp_dir=/opt/dwhdata/
+ftp_file=imt_file.ftp
+
+if [[ -r /tmp/DATAREQUEST/OfficialIds.txt ]]
+then
+   echo ""
+else
+   echo ""
+   echo "File Missing :OfficialIds.txt "
+   echo "------------------------------"
+   exit
+fi
+
+if [[ $call_by_datareport != T ]]
+then
+     datareq_by=`ls  *mail* | cut -d'_' -f1,1 | grep -i [a-z] | uniq && ls  *sms* | cut -d'_' -f1,1 | grep -i [a-z] | uniq`
+else 
+      datareq_by=$req_by
+fi
+for j in $datareq_by 
+do
+   f_cnt=0 
+   echo ""
+   echo "Datarequest_By :$j"
+   echo "*****************************"
+   
+   for i in `ls $j*`
+   do
+        Search_String=`head -2 $i | egrep -i [a-z]`
+        if [[ $Search_String != '' ]]
+        then
+        	f_cnt=`expr $f_cnt + 1`
+    		echo "file(${f_cnt}) :$i"
+   		cat OfficialIds.txt $i > ${i}-apnd
+   		mv ${i}-apnd $i
+        fi
+   done
+
+   #scp -p $j* dwhuser@192.168.206.142:/opt/dwhdata/$j/
+
+	echo "#!/bin/ksh" > $ftp_file
+	echo "HOST=$ip" >> $ftp_file
+	echo "USER=$user" >> $ftp_file
+	echo "PASSWD=$pswd" >> $ftp_file
+	echo "ftp -in \$HOST <<EOF" >> $ftp_file
+	echo "quote USER \$USER" >> $ftp_file
+	echo "quote PASS \$PASSWD" >> $ftp_file
+	echo "binary" >> $ftp_file
+	echo "cd $ftp_dir" >> $ftp_file
+	echo "pwd" >> $ftp_file
+        echo "dir" >> $ftp_file 
+	echo "quit" >> $ftp_file
+	echo "EOF" >> $ftp_file
+   #execute FTP script
+	chmod 755 ${ftp_file}
+	./${ftp_file} > dir_available_imt.log
+
+       cr_dir=`cat dir_available_imt.log | grep $j`
+        echo "#!/bin/ksh" > $ftp_file
+        echo "HOST=$ip" >> $ftp_file
+        echo "USER=$user" >> $ftp_file
+        echo "PASSWD=$pswd" >> $ftp_file
+        echo "ftp -in \$HOST <<EOF" >> $ftp_file
+        echo "quote USER \$USER" >> $ftp_file
+        echo "quote PASS \$PASSWD" >> $ftp_file
+        echo "binary" >> $ftp_file
+        echo "cd $ftp_dir" >> $ftp_file
+        echo "pwd" >> $ftp_file
+        if [[ $cr_dir == '' ]]
+        then
+            echo "mkdir $j" >> $ftp_file
+        fi
+        echo "cd $j"  >> $ftp_file
+        echo "put $j*" >> $ftp_file
+        echo "quit" >> $ftp_file
+        echo "EOF" >> $ftp_file
+   #execute FTP script
+        chmod 755 ${ftp_file}
+        ./${ftp_file}
+
+   
+   exit_code=$?
+   if [[ $exit_code != 0 ]]
+   then
+       printf "Directory $j Not Found in IMT Server"
+       echo "Directory $j Not Found in IMT Server"
+       exit 1
+   fi
+   mv $j* /tmp/archive/$j/
+   exit_code=$?
+   if [[ $exit_code != 0 ]]
+   then
+       mkdir /tmp/archive/$j
+       mv $j* /tmp/archive/$j/
+       echo "Directory($j) has been Created on /tmp/archive/"
+   fi
+done
+rm -f dir_available_imt.log
+rm -f imt_file.ftp
+exit
+

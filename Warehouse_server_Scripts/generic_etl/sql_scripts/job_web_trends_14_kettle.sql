@@ -1,0 +1,2 @@
+call tjsitestats.prc_generate_daily_tjcand_webtrends_InDate(current_date);
+call tjsitestats.prc_generate_daily_tjcand_param_stat_4_InDate(current_date);

@@ -1,0 +1,16 @@
+#!/bin/ksh
+set -x
+
+cd /home/dwhuser/DATAREQUEST_PROCESS
+HOME=/home/dwhuser
+
+input=$3
+isFile=`echo $input | egrep -i '\.txt|\.log|\.cron|\.dmp'`
+
+if [[ $isFile != "" ]]; then
+    input_file=`cat $input`
+    perl $HOME/DATAREQUEST_PROCESS/mail.pl "$1" " $2" "$input_file"
+else
+    perl $HOME/DATAREQUEST_PROCESS/mail.pl "$1" " $2"  "$3"
+fi
+exit 1

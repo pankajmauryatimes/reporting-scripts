@@ -1,0 +1,9 @@
+select distinct trim(email_id) into outfile '/tmp/Sachin_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='Sachin_Data' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/leadcompdata.txt' from crm_lead_de_dupe_data_fact where source_desc='leadcompdata' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/Hire_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='Hire_Data' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/Cand_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='Cand_Data' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/CRM_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='CRM_Data' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/active_clients.txt' from crm_lead_de_dupe_data_fact where source_desc='active_clients' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/NON_FOS_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='NON_FOS_Data' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/demo_ids.txt' from crm_lead_de_dupe_data_fact where source_desc='demo_ids' and lead_flg = 'A' and del_flg = 'A' ;
+select distinct trim(email_id) into outfile '/tmp/All_HR_Data.txt' from crm_lead_de_dupe_data_fact where source_desc='All_HR_Data' and lead_flg = 'A' and del_flg = 'A' ;

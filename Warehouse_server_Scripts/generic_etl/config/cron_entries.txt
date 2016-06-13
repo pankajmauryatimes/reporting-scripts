@@ -1,0 +1,129 @@
+#******** Jobbuzz Referral Report II ********************
+30 00 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/job_insight_data.env > /home/dwhuser/generic_etl/logs/job_insight_data.cron 2>&1
+
+00 01 * * * /home/dwhuser/generic_etl/ksh_scripts/data_purging_script.ksh > /home/dwhuser/generic_etl/logs/data_purging_script.log 2>&1
+
+#********* SOCIAL MEDIA  ******************************
+15 01 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/social_media.env > /home/dwhuser/generic_etl/logs/social_media.cron 2>&1
+
+15 01 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/delete_logins.env > /home/dwhuser/generic_etl/logs/delete_logins.cron  2>&1
+
+17 01 * * *  /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/jobbuzz_refferal_rep.env > /home/dwhuser/generic_etl/logs/jobbuzz_refferal_rep.cron 2>&1
+
+30 01 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/Application_Status_Daily_v2.env > /home/dwhuser/generic_etl/logs/Application_Status_Daily_v2.cron 2>&1
+
+#******* LOGIN USAGE HISTORY ***********
+30 01 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/login_usage_history.env > /home/dwhuser/generic_etl/logs/login_usage_history.cron 2>&1
+
+#******** FA wise Application Count ********************
+00 02 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/fa_wise_application_breakup.env > /home/dwhuser/generic_etl/logs/fa_wise_application_breakup.cron
+
+00 02 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/jobbuzz_v2.env > /home/dwhuser/generic_etl/logs/jobbuzz_v2.cron 2>&1
+
+#******** Experience Wise Application Count **********
+10 02 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/experience_range_application_breakup.env > /home/dwhuser/generic_etl/logs/experience_range_application_breakup.cron
+
+#******* CANDIDATE TRANSACTION, SOCIAL MEDIA AND JOB WEB TRENDS 14 KETTLE *************
+30 02 * * * /home/dwhuser/generic_etl/ksh_scripts/batch_load.ksh CTASM_batch.env Y > /home/dwhuser/generic_etl/logs/CTASM_batch.cron 2>&1
+
+30 02 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/crawl_jobs_parameter.env > /home/dwhuser/generic_etl/logs/crawl_jobs_parameter.cron 2>&1
+
+00 03 * * 0 /home/dwhuser/tjdwh/bin/weekly_dwh_crontab.sh > /home/dwhuser/tjdwh/log/weekly_dwh_crontab.log
+
+00 01 * * 0 /home/dwhuser/generic_etl/sh_scripts/cleaner.sh > /home/dwhuser/generic_etl/sh_scripts/cleaner.cron  2>&1
+
+00 03 * * 1 /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/uniq_jobs_resumes_in_alerts.env >  /home/dwhuser/generic_etl/logs/uniq_jobs_resumes_in_alerts.cron 2>&1
+
+00 03 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/phone_push_alert_report.env > /home/dwhuser/generic_etl/logs/phone_push_alert_report.cron 2>&1
+
+50 03 * * 02 /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/featured_profile_section_usage.env > /home/dwhuser/generic_etl/logs/featured_profile_section_usage.cron 2>&1
+
+00 04 * * * /home/dwhuser/tjdwh/bin/daily_dwh_crontab.sh > /home/dwhuser/tjdwh/log/daily_dwh_crontab.log
+
+00 05 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/resume_view_source_wise.env > /home/dwhuser/generic_etl/logs/resume_view_source_wise.cron 2>&1
+
+33 12 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/lead_capture_detail.env > /home/dwhuser/generic_etl/logs/lead_capture_detail.cron 2>&1
+
+50 05 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/job_alert_kpi.env > /home/dwhuser/generic_etl/logs/job_alert_kpi.cron 2>&1
+
+55 05 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/job_alert_kpi_1.env > /home/dwhuser/generic_etl/logs/job_alert_kpi_1.cron 2>&1
+
+00 06 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/corp_transaction_kpi.env > /home/dwhuser/generic_etl/logs/corp_transaction_kpi.cron 2>&1
+
+00 06 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/govt_jobs_kpi.env > /home/dwhuser/generic_etl/logs/govt_jobs_kpi.cron 2>&1
+
+00 07 01 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/campiagn_monthly.env > /home/dwhuser/generic_etl/logs/campiagn_monthly.cron 2>&1
+
+#******* GA MONTHLY DATA ****************
+00 07 * * * /home/dwhuser/generic_etl/ksh_scripts/batch_load.ksh ga_monthly_data_batch.env Y > /home/dwhuser/generic_etl/logs/ga_monthly_data_batch.cron 2>&1
+
+#******** WIDGETS STATS ******************
+30 07 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/widgets_stats.env > /home/dwhuser/generic_etl/logs/widgets_stats.cron 2>&1
+
+00 08 01 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/coverage_alert.env > /home/dwhuser/generic_etl/logs/coverage_alert.cron 2>&1
+
+00 08 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/freshness_wise_daily_application.env > /home/dwhuser/generic_etl/logs/freshness_wise_daily_application.cron 2>&1
+
+15 09 * * * /home/dwhuser/generic_etl/ksh_scripts/clean_up_data_archive.ksh >/home/dwhuser/generic_etl/logs/data_archive_rem 2>&1
+
+12 12 * * * /tmp/et_demand_aos.ksh > et_demand_aos.log2 2>&1
+
+#******* ACTIVE EXPIRE REPORT **********
+30 09 01 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/active_expire_report_v2.env > /home/dwhuser/generic_etl/logs/active_expire_report_v2.cron 2>&1
+
+35 09 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/mailer_parameter.env > /home/dwhuser/generic_etl/logs/mailer_parameter.cron 2>&1
+
+40 09 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_banking.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_banking.cron 2>&1
+
+#******** PROMOTION FLAG UPDATE FOR CANDIDATE IN DWH ****************
+00 10 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotion_block.env > /home/dwhuser/generic_etl/logs/promotion_block.cron 2>&1
+
+#******** MONTHLY REPORT ***************
+10 10 01 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/monthly_report.env > /home/dwhuser/generic_etl/logs/monthly_report.cron 2>&1
+
+#******** WEEKLY REPORT ****************
+25 10 * * 1 /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/weekly_report.env > /home/dwhuser/generic_etl/logs/weekly_report.cron 2>&1
+
+#******** WEEKLY REPORT DEMO LOGINS****************
+45 10 * * 1 /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/weekly_report_demo_till_date.env > /home/dwhuser/generic_etl/logs/weekly_report_demo_till_date.cron 2>&1
+
+00 11 02 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/monthly_procedures_in_DWH.env > /home/dwhuser/generic_etl/logs/pre_monthly_procedures_in_DWH.cron 2>&1
+
+#******** DAILY STAT LIVE HIRE DB RESUME SEARCH ******************
+30 11 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/dailystat.env > /home/dwhuser/generic_etl/logs/dailystat.cron 2>&1
+
+
+45 11 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/daily_procedures_in_DWH.env > /home/dwhuser/generic_etl/logs/daily_procedures_in_DWH.cron  2>&1
+
+00 12 02 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/monthly_et_data.env > /home/dwhuser/generic_etl/logs/pre_monthly_et_data.cron 2>&1
+
+00 12 03 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/monthly_recrutex_data.env > /home/dwhuser/generic_etl/logs/pre_monthly_recrutex_data.cron 2>&1
+
+#********* PROMOTIONAL DATA OF NITIN CHADDHA (ZERO TO ONE MONTH FRESHNESS) ***********
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f1.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f1.cron 2>&1
+
+#********* PROMOTIONAL DATA OF NITIN CHADDHA (ONE TO THREE MONTH FRESHNESS) ***********
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f2.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f2.cron 2>&1
+
+#********* PROMOTIONAL DATA OF NITIN CHADDHA (ONE TO THREE MONTH FRESHNESS) ***********
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f21.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f21.cron 2>&1
+
+#********* PROMOTIONAL DATA OF NITIN CHADDHA (THREE TO SIX MONTH FRESHNESS) ***********
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f3.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f3.cron 2>&1
+
+#********* PROMOTIONAL DATA OF NITIN CHADDHA (SIX TO TWELVE MONTH FRESHNESS) ***********
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f4.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f4.cron 2>&1
+
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f8.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f8.cron 2>&1
+
+00 17 * * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/promotional_data_script_f9.env >  /home/dwhuser/generic_etl/logs/promotional_data_script_f9.cron 2>&1
+
+00 18 * * 06 /tmp/etl_update/wip/batch_man_del_proc.ksh 5
+
+00 18 1 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/data_request_IT_NonIT.env > /home/dwhuser/generic_etl/logs/data_request_IT_NonIT.cron 2>&1
+
+00 22 * * 5 /home/dwhuser/tjdwh/bin/daily_activity.sh > /home/dwhuser/tjdwh/log/cron_daily_activity.log
+
+#******** Active Jobs FA and Industry Wise *************************
+00 23 01 * * /home/dwhuser/generic_etl/ksh_scripts/generic_load.ksh /home/dwhuser/generic_etl/config/monthly_active_jobs_fa_industry_wise.env > /home/dwhuser/generic_etl/logs/monthly_active_jobs_fa_industry_wise.cron 2>&1
+

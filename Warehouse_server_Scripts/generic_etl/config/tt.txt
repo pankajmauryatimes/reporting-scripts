@@ -1,0 +1,392 @@
+#export ktl_rep=mysqldwh_repo
+./coverage_alert.env
+export ktl_rep=mysqldwh_repo
+./dailystat.env
+#export ktl_rep=mysqldwh_repo
+./govt_jobs_kpi.env
+#export ktl_rep=mysqldwh_repo
+./active_expire_report_v2.env
+#export ktl_rep=mysqldwh_repo
+./job_alert_kpi_1.env
+#export ktl_rep=tjsitestats_repo
+./crawl_jobs_parameter.env
+#export ktl_rep=mysqldwh_repo
+./featured_profile_section_usage.env
+export ktl_rep=DataMart_repo_old
+./phone_push_alert_report.env
+#export ktl_rep=mysqldwh_repo
+./resume_search.env
+#export ktl_rep=tjsitestats_repo
+./experience_range_application_breakup.env
+export ktl_rep=tjdwh_repo_new
+./web_trend.env
+export ktl_rep=tjsitestats_repo
+./xml_file_83.env
+export ktl_rep=mysqldwh_repo
+./job_monitor.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f5.env
+#export ktl_rep=mysqldwh_repo
+./monthly_recrutex_data.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f6.env
+export ktl_rep=mysqldwh_repo
+./weekly_report.env
+#export ktl_rep=mysqldwh_repo
+./weekly_report_demo.env
+#export ktl_rep=mysqldwh_repo
+./monthly_et_data.env
+export ktl_rep=mysqldwh_repo
+./widgets_stats.env
+#export ktl_rep=tjsitestats_repo
+./fa_wise_application_breakup.env
+export ktl_rep=jobbuzz_repo
+./jobbuzz_v2.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f1.env
+#export ktl_rep=mysqldwh_repo
+./resume_view_source_wise.env
+#export ktl_rep=mysqldwh_repo
+./apps_status_till_date_daily.env
+   REPO=$(cat $env_file  | grep 'ktl_rep')
+./kettle_job.ksh
+#export ktl_rep=mysqldwh_repo
+./promotion_block.env
+#export ktl_rep=mysqldwh_repo
+./delete_logins.env
+export ktl_rep=tjsitestats_repo
+./dial_bpo.env
+#export ktl_rep=tjsitestats_repo
+./kettle_execute_report.env
+export ktl_rep=DataMart_repo_old
+./uniq_jobs_resumes_in_alerts.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f41.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f4.env
+#export ktl_rep=tjsitestats_repo
+./mail_alert_domain.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f9.env
+#export ktl_rep=tjsitestats_repo
+./mobile_parameter.env
+#export ktl_rep=mysqldwh_repo
+./searchLogstat.env
+#export ktl_rep=tjsitestats_repo
+./job_alert_count.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f8.env
+#export ktl_rep=mysqldwh_repo
+./monthly_active_jobs_fa_industry_wise.env
+export ktl_rep=DataMart_repo_old
+./job_insight_data.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_banking.env
+export ktl_rep=mysqldwh_repo
+./monthly_report.env
+export ktl_rep=tjdwh_repo_new
+./lead_capture_detail.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f7.env
+export ktl_rep=mysqldwh_repo
+./Direct_M.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f21.env
+#export ktl_rep=tjsitestats_repo
+./candidate_transaction.env
+#export ktl_rep=mysqldwh_repo
+./corp_transaction_kpi.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f2.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/coverage_alert.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/dailystat.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/govt_jobs_kpi.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/active_expire_report_v2.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/job_alert_kpi_1.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/crawl_jobs_parameter.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/featured_profile_section_usage.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/resume_search.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/experience_range_application_breakup.env
+export ktl_rep=tjdwh_repo_new
+./bkp_config_15Sep/web_trend.env
+export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/xml_file_83.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/job_monitor.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f5.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/monthly_recrutex_data.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f6.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/weekly_report.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/weekly_report_demo.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/monthly_et_data.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/widgets_stats.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/fa_wise_application_breakup.env
+export ktl_rep=jobbuzz_repo
+./bkp_config_15Sep/jobbuzz_v2.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f1.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/resume_view_source_wise.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/apps_status_till_date_daily.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotion_block.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/delete_logins.env
+export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/dial_bpo.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/kettle_execute_report.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f41.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f4.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/mail_alert_domain.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/mobile_parameter.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/searchLogstat.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/job_alert_count.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f8.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/monthly_active_jobs_fa_industry_wise.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_banking.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/monthly_report.env
+export ktl_rep=tjdwh_repo_new
+./bkp_config_15Sep/lead_capture_detail.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f7.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/Direct_M.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f21.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/candidate_transaction.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/corp_transaction_kpi.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f2.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/Direct.env
+#export ktl_rep=tjsitestats_repo
+./bkp_config_15Sep/mail_alert_workexp.env
+export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/weekly_report_demo_till_date.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/job_alert_kpi.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/Application_Status_Daily_v2.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/freshness_wise_daily_application.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/promotional_data_script_f211.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/active_expire_report.env
+export ktl_rep=tjdwh_repo_new
+./bkp_config_15Sep/mailer_parameter.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/monthly_procedures_in_DWH.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/social_media.env
+export ktl_rep=tjdwh_repo_new
+./bkp_config_15Sep/job_web_trends_14_kettle.env
+#export ktl_rep=mysqldwh_repo
+./bkp_config_15Sep/campiagn_monthly.env
+export ktl_rep=mysqldwh_repo
+./Direct.env
+#export ktl_rep=tjsitestats_repo
+./mail_alert_workexp.env
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjsitestats_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=jobbuzz_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjsitestats_repo
+./kettle_jobs.txt
+export ktl_rep=mysqldwh_repo
+./weekly_report_demo_till_date.env
+#export ktl_rep=mysqldwh_repo
+./job_alert_kpi.env
+#export ktl_rep=tjsitestats_repo
+./login_usage_history_rep.env
+#export ktl_rep=mysqldwh_repo
+./Application_Status_Daily_v2.env
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=DataMart_repo_old
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=tjdwh_repo_new
+export ktl_rep=tjsitestats_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=jobbuzz_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+   REPO=$(cat $env_file  | grep 'ktl_rep')
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=tjsitestats_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=DataMart_repo_old
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=DataMart_repo_old
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+export ktl_rep=tjdwh_repo_new
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=tjdwh_repo_new
+export ktl_rep=tjsitestats_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=jobbuzz_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=tjsitestats_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+export ktl_rep=tjdwh_repo_new
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=tjdwh_repo_new
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=tjdwh_repo_new
+#export ktl_rep=mysqldwh_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjsitestats_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=jobbuzz_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjdwh_repo_new
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=mysqldwh_repo
+REPO     :export ktl_rep=tjsitestats_repo
+export ktl_rep=mysqldwh_repo
+#export ktl_rep=mysqldwh_repo
+#export ktl_rep=tjsitestats_repo
+#export ktl_rep=mysqldwh_repo
+./tt.txt
+#export ktl_rep=mysqldwh_repo
+./freshness_wise_daily_application.env
+#export ktl_rep=mysqldwh_repo
+./promotional_data_script_f211.env
+#export ktl_rep=mysqldwh_repo
+./active_expire_report.env
+export ktl_rep=tjdwh_repo_new
+./mailer_parameter.env
+export ktl_rep=DataMart_repo_old
+./jobbuzz_refferal_rep.env
+#export ktl_rep=mysqldwh_repo
+./monthly_procedures_in_DWH.env
+#export ktl_rep=mysqldwh_repo
+./social_media.env
+export ktl_rep=tjdwh_repo_new
+./job_web_trends_14_kettle.env
+#export ktl_rep=mysqldwh_repo
+./campiagn_monthly.env

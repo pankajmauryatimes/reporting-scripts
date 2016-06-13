@@ -1,0 +1,1 @@
+load data local infile '/home/dwhuser/generic_etl/wip/ga_applications_crawled_jobs_manual.csv' into table ga_applications_manual_crawled_jobs fields terminated by ',' enclosed by '"' lines terminated by '\n';

@@ -1,0 +1,1 @@
+call tjdwh_db.prc_generate_resume_view_source(current_date);
