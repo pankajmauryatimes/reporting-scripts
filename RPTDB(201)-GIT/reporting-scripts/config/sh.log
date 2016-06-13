@@ -1,0 +1,1078 @@
++ SCRIPT=generic_load.ksh
++ USAGE='Usage: generic_load.ksh CONFIG_FILE'
++ (( 1 < 1 ))
++ printf 'Run Config File\n'
++ /home/datareq/generic_etl/ksh_scripts/generic_load_new.ksh[25]: /: cannot create [Is a directory]
++ CONFIG_FILE=/home/datareq/generic_etl/config/job_wise_applications.env
++ . /home/datareq/generic_etl/config/job_wise_applications.env
++ set -x
++ cur_proc=job_wise_applications
++ export cur_proc
++ date +%d%b%y
++ today=21Dec15
++ export today
++ cur_proc_name='Job Wise Applications'
++ export cur_proc_name
++ date +%m%d%Y-%H%M%S
++ now=12212015-113432
++ export now
++ date '--date=1 day ago' +%d%m%Y
++ last_day=20122015
++ export last_day
++ send_mail=Y
++ export send_mail
++ date +%d%b%Y
++ f_date=21Dec2015
++ export f_date
++ LOAD_FILE=job_wise_applications.done
++ export LOAD_FILE
++ email=sanjay.biswas@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com
++ export email
++ tmail=sanjay.biswas@timesgroup.com,gaurav.kumar2@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com
++ export tmail
++ cmail=amit.singhal@timesgroup.com,sandeep.singhal@timesgroup.com
++ export cmail
++ DB2_USER=tcuser
++ export DB2_USER
++ DB2_DB=tjcandb
++ export DB2_DB
++ LOAD_DIR=/home/datareq/generic_etl/wip
++ export LOAD_DIR
++ cutoff=23:50:00
++ export cutoff
++ remind=07:00:00
++ export remind
++ remindsent=0
++ export remindsent
++ [[ 0 != 0 ]]
++ [ 'Job Wise Applications' == '' ]
++ printf 'Run PWHS Config File\n'
++ /home/datareq/generic_etl/ksh_scripts/generic_load_new.ksh[42]: /: cannot create [Is a directory]
++ . /home/datareq/generic_etl/config/pwhs.env
++ set -x
++ date +%m%d%Y
++ nowd=12212015
++ SQL_SCRIPTS_DIR=/home/datareq/generic_etl/sql_scripts
++ export SQL_SCRIPTS_DIR
++ SQL_FILE=job_wise_applications.sql
++ export SQL_FILE
++ SQL_FILE=/home/datareq/generic_etl/sql_scripts/job_wise_applications.sql
++ export SQL_FILE
++ LOG_DIR=/home/datareq/generic_etl/logs
++ export LOG_DIR
++ LOG_FILE=job_wise_applications_12212015.log
++ export LOG_FILE
++ SPOOL_FILE=/home/datareq/generic_etl/logs/job_wise_applications_sp_12212015.lst
++ export SPOOL_FILE
++ KSH_SCRIPTS_DIR=/home/datareq/generic_etl/ksh_scripts
++ export KSH_SCRIPTS_DIR
++ CONFIG_DIR=/home/datareq/generic_etl/config
++ export CONFIG_DIR
++ LOG_SQLFILE=job_wise_applications_sql_12212015.log
++ export LOG_SQLFILE
++ mutt=/home/datareq/generic_etl/ksh_scripts/email.pl
++ export mutt
++ CTL_DIR=/home/datareq/generic_etl/ctl
++ export CTL_DIR
++ CTL_FILE=job_wise_applications.sql
++ export CTL_FILE
++ CTL_FILE=/home/datareq/generic_etl/ctl/job_wise_applications.sql
++ export CTL_FILE
++ LOG_CTLFILE='{cur_proc}_12212015_ctl'
++ export LOG_CTLFILE
++ BAD_DIR=/home/datareq/generic_etl/bad
++ export BAD_DIR
++ BAD_FILE=job_wise_applications_12212015.bad
++ export BAD_FILE
++ DATA_DIR=/home/datareq/generic_etl/data
++ export DATA_DIR
++ DSC_DIR=/home/datareq/generic_etl/discard
++ export DSC_DIR
++ DISC_FILE=job_wise_applications_12212015.dsc
++ export DISC_FILE
++ LDR_LOG_FILE=/home/datareq/generic_etl/logs//home/datareq/generic_etl/ctl/job_wise_applications.log.12212015
++ export LDR_LOG_FILE
++ exit_code=0
++ date +%T
++ time=11:34:32
++ printf 'time is 11:34:32 \n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [[ 0 != 0 ]]
++ date
++ printf Mon Dec 21 11:34:32 IST 2015
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ printf '\n '
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ printf 'Convert ORIG_FILE_READY to FILE_READY \n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [[ '' != '' ]]
++ printf 'FILE_READY =  \n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ printf 'Busy Wait for FILE_READY\n'
+Busy Wait for FILE_READY
++ printf 'Busy Wait for FILE_READY\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ date +%T
++ time=11:34:32
++ printf 'time is 11:34:32'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ printf '\ncutoff is 23:50:00'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [[ 11:34:32 < 23:50:00 ]]
++ [ -a ]
++ printf 'File found.'
+File found.+ printf '\nFILE_READY found.\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ break
++ [[ 11:34:32 > 23:50:00 ]]
++ printf 'Convert ORIG_FILE_NAME by date\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [[ '' == Y ]]
++ date +%T
++ time=11:34:32
++ printf 'time is 11:34:32'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ printf '\ncutoff is 23:50:00'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [ -r /home/datareq/generic_etl/ksh_scripts/pre_job_wise_applications.ksh ]
++ printf '\nProcessing pre_job_wise_applications.ksh Script ...\n'
+
+Processing pre_job_wise_applications.ksh Script ...
++ printf '\nProcessing pre_job_wise_applications.ksh Script ...\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ chmod 755 /home/datareq/generic_etl/ksh_scripts/pre_job_wise_applications.ksh
++ /home/datareq/generic_etl/ksh_scripts/pre_job_wise_applications.ksh
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ exit_code=0
++ [[ 0 != 0 ]]
++ [[ 11:34:32 < 23:50:00 ]]
++ [[ job_wise_applications.done != '' ]]
++ printf 'Copying data files to data, wip Dirs\n'
+Copying data files to data, wip Dirs
++ printf 'Copying data files to WIP Dirs\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ cp /home/datareq/generic_etl/wip/job_wise_applications.done /home/datareq/generic_etl/wip
+cp: cannot stat `/home/datareq/generic_etl/wip/job_wise_applications.done': No such file or directory
++ printf 'DB Status Check\n'
+DB Status Check
++ database_status=0
++ [[ 11:34:32 < 23:50:00 ]]
++ [[ 0 == 0 ]]
++ printf 'Database status was reviewed.  DB is running.\n'
+Database status was reviewed.  DB is running.
++ printf 'Database status was reviewed.  DB is running.\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ break
++ [[ 11:34:32 > 23:50:00 ]]
++ [ -r /home/datareq/generic_etl/ctl/job_wise_applications.sql ]
++ printf '\nmove the data file from WIP to archive directory\n'
+
+move the data file from WIP to archive directory
++ mv /home/datareq/generic_etl/wip/job_wise_applications.done /home/datareq/generic_etl/data_archive/job_wise_applications.done.12212015-113432
+mv: cannot stat `/home/datareq/generic_etl/wip/job_wise_applications.done': No such file or directory
++ [[ 11:34:32 < 23:50:00 ]]
++ [ -r /home/datareq/generic_etl/sql_scripts/job_wise_applications.sql ]
++ printf '\nProcessing SQL Script ...\n'
+
+Processing SQL Script ...
++ printf '\nProcessing SQL Script ...\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [[ '' != '' ]]
++ /home/datareq/generic_etl/config/_run_sql.ksh tcuser tjcandb /home/datareq/generic_etl/sql_scripts/job_wise_applications.sql /home/datareq/generic_etl/logs/job_wise_applications_12212015.log DB2
++ USAGE='Usage: _run_sql.ksh DB2/MYSQL USER DB2/MYSQL DB SQL_FILE LOG_FILE'
++ (( 5 < 5 ))
++ USER=tcuser
++ export USER
++ DB=tjcandb
++ export DB
++ SQL_FILE=/home/datareq/generic_etl/sql_scripts/job_wise_applications.sql
++ export SQL_FILE
++ LOG_FILE=/home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ export LOG_FILE
++ DATABASE=DB2
++ export DATABASE
++ ARG1=''
++ export ARG1
++ ARG2=''
++ export ARG2
++ [ DB2 == DB2 ]
++ [ -f /candreports/db2inst2/sqllib/db2profile ]
++ . /candreports/db2inst2/sqllib/db2profile
++ DB2DIR=/db2binary/V9.1
++ CUR_INSTNAME=db2inst2
++ DB2INSTANCE=db2inst2
++ export DB2INSTANCE
++ INSTHOME=/candreports/db2inst2
++ [ -n db2inst2 ]
++ /candreports/db2inst2/sqllib/bin/db2usrinf -d db2inst2
++ CUR_INSTHOME=/candreports/db2inst2
++ path_list='bin adm misc'
++ class_list='java/db2java.zip java/db2jcc.jar java/sqlj.zip function        java/db2jcc_license_cisuz.jar java/db2jcc_license_cu.jar                java/runtime.zip'
++ AddRemoveString PATH /candreports/db2inst2/sqllib/bin r
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/bin
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/bin"{print $0}'
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/bin
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:\n/candreports/db2inst2/sqllib/adm:\n/candreports/db2inst2/sqllib/misc:'
++ sed 's/\: /\:/g'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin: /candreports/db2inst2/sqllib/adm: /candreports/db2inst2/sqllib/misc:
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc:
++ [ Xr = Xa ]
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc:
++ sed 's/:$//'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ unset var addrm_str awkval newval
++ AddRemoveString PATH /candreports/db2inst2/sqllib/adm r
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/adm
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/adm"{print $0}'
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/adm
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:\n/candreports/db2inst2/sqllib/misc:'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin: /candreports/db2inst2/sqllib/misc:
++ sed 's/\: /\:/g'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc:
++ [ Xr = Xa ]
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc:
++ sed 's/:$//'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc
++ unset var addrm_str awkval newval
++ AddRemoveString PATH /candreports/db2inst2/sqllib/misc r
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/misc
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/misc"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/misc
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/misc
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin:
++ sed 's/\: /\:/g'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:
++ [ Xr = Xa ]
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:
++ sed 's/:$//'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2java.zip r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2java.zip
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2java.zip"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2java.zip
++ newval=$'/candreports/db2inst2/sqllib/java/db2jcc.jar:\n/candreports/db2inst2/sqllib/java/sqlj.zip:\n/candreports/db2inst2/sqllib/function:\n/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:\n.:'
++ echo /candreports/db2inst2/sqllib/java/db2jcc.jar: /candreports/db2inst2/sqllib/java/sqlj.zip: /candreports/db2inst2/sqllib/function: /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar: .:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2jcc.jar r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2jcc.jar
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2jcc.jar"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2jcc.jar
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ newval=$'/candreports/db2inst2/sqllib/java/sqlj.zip:\n/candreports/db2inst2/sqllib/function:\n/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:\n.:'
++ sed 's/\: /\:/g'
++ echo /candreports/db2inst2/sqllib/java/sqlj.zip: /candreports/db2inst2/sqllib/function: /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar: .:
++ newval=/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/sqlj.zip r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/sqlj.zip
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/sqlj.zip"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/sqlj.zip
++ newval=$'/candreports/db2inst2/sqllib/function:\n/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:\n.:'
++ echo /candreports/db2inst2/sqllib/function: /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar: .:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/function r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/function
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/function"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/function
++ newval=$'/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:\n.:'
++ sed 's/\: /\:/g'
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar: .:
++ newval=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2jcc_license_cisuz.jar r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2jcc_license_cisuz.jar
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2jcc_license_cisuz.jar"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2jcc_license_cisuz.jar
++ newval=$'/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:\n.:'
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar: .:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ newval=.:
++ echo .:
++ sed 's/\: /\:/g'
++ newval=.:
++ [ Xr = Xa ]
++ sed 's/:$//'
++ echo .:
++ newval=.
++ eval CLASSPATH='"."'
++ CLASSPATH=.
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/runtime.zip r
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/runtime.zip
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/runtime.zip"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo .
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/runtime.zip
++ newval=.:
++ echo .:
++ sed 's/\: /\:/g'
++ newval=.:
++ [ Xr = Xa ]
++ echo .:
++ sed 's/:$//'
++ newval=.
++ eval CLASSPATH='"."'
++ CLASSPATH=.
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH /candreports/db2inst2/sqllib/lib r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib"{print $0}'
++ eval echo '${LD_LIBRARY_PATH:-}'
++ echo /candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib
++ newval=$'/candreports/db2inst2/sqllib/lib64:\n/candreports/db2inst2/sqllib/lib32:'
++ echo /candreports/db2inst2/sqllib/lib64: /candreports/db2inst2/sqllib/lib32:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ eval LD_LIBRARY_PATH='"/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32"'
++ LD_LIBRARY_PATH=/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH /candreports/db2inst2/sqllib/lib32 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ eval echo '${LD_LIBRARY_PATH:-}'
++ echo /candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ newval=/candreports/db2inst2/sqllib/lib64:
++ echo /candreports/db2inst2/sqllib/lib64:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/lib64:
++ [ Xr = Xa ]
++ echo /candreports/db2inst2/sqllib/lib64:
++ sed 's/:$//'
++ newval=/candreports/db2inst2/sqllib/lib64
++ eval LD_LIBRARY_PATH='"/candreports/db2inst2/sqllib/lib64"'
++ LD_LIBRARY_PATH=/candreports/db2inst2/sqllib/lib64
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH /candreports/db2inst2/sqllib/lib64 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${LD_LIBRARY_PATH:-}'
++ echo /candreports/db2inst2/sqllib/lib64
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH='""'
++ LD_LIBRARY_PATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString LIBPATH /candreports/db2inst2/sqllib/lib r
++ [ 3 -ne 3 ]
++ var=LIBPATH
++ addrm_str=/candreports/db2inst2/sqllib/lib
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib"{print $0}'
++ eval echo '${LIBPATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LIBPATH='""'
++ LIBPATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString LIBPATH /candreports/db2inst2/sqllib/lib32 r
++ [ 3 -ne 3 ]
++ var=LIBPATH
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ eval echo '${LIBPATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LIBPATH='""'
++ LIBPATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString LIBPATH /candreports/db2inst2/sqllib/lib64 r
++ [ 3 -ne 3 ]
++ var=LIBPATH
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${LIBPATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LIBPATH='""'
++ LIBPATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString SHLIB_PATH /candreports/db2inst2/sqllib/lib r
++ [ 3 -ne 3 ]
++ var=SHLIB_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib"{print $0}'
++ eval echo '${SHLIB_PATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval SHLIB_PATH='""'
++ SHLIB_PATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString SHLIB_PATH /candreports/db2inst2/sqllib/lib32 r
++ [ 3 -ne 3 ]
++ var=SHLIB_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ eval echo '${SHLIB_PATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval SHLIB_PATH='""'
++ SHLIB_PATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString SHLIB_PATH /candreports/db2inst2/sqllib/lib64 r
++ [ 3 -ne 3 ]
++ var=SHLIB_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${SHLIB_PATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval SHLIB_PATH='""'
++ SHLIB_PATH=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_32 /candreports/db2inst2/sqllib/lib r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_32
++ addrm_str=/candreports/db2inst2/sqllib/lib
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib"{print $0}'
++ eval echo '${LD_LIBRARY_PATH_32:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH_32='""'
++ LD_LIBRARY_PATH_32=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_32 /candreports/db2inst2/sqllib/lib32 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_32
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ eval echo '${LD_LIBRARY_PATH_32:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ newval=''
++ sed 's/\: /\:/g'
++ echo
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH_32='""'
++ LD_LIBRARY_PATH_32=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_32 /candreports/db2inst2/sqllib/lib64 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_32
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${LD_LIBRARY_PATH_32:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH_32='""'
++ LD_LIBRARY_PATH_32=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_64 /candreports/db2inst2/sqllib/lib r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_64
++ addrm_str=/candreports/db2inst2/sqllib/lib
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib"{print $0}'
++ eval echo '${LD_LIBRARY_PATH_64:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ sed 's/:$//'
++ echo
++ newval=''
++ eval LD_LIBRARY_PATH_64='""'
++ LD_LIBRARY_PATH_64=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_64 /candreports/db2inst2/sqllib/lib32 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_64
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ eval echo '${LD_LIBRARY_PATH_64:-}'
++ echo
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH_64='""'
++ LD_LIBRARY_PATH_64=''
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH_64 /candreports/db2inst2/sqllib/lib64 r
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH_64
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=r
++ [ Xr != Xa -a Xr != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${LD_LIBRARY_PATH_64:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ echo
++ sed 's/\: /\:/g'
++ newval=''
++ [ Xr = Xa ]
++ echo
++ sed 's/:$//'
++ newval=''
++ eval LD_LIBRARY_PATH_64='""'
++ LD_LIBRARY_PATH_64=''
++ unset var addrm_str awkval newval
++ eval path_value='$PATH'
++ path_value=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin
++ [ X/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin = X ]
++ export PATH
++ eval path_value='$CLASSPATH'
++ path_value=.
++ [ X. = X ]
++ export CLASSPATH
++ eval path_value='$LD_LIBRARY_PATH'
++ path_value=''
++ [ X = X ]
++ unset LD_LIBRARY_PATH
++ eval path_value='$LIBPATH'
++ path_value=''
++ [ X = X ]
++ unset LIBPATH
++ eval path_value='$SHLIB_PATH'
++ path_value=''
++ [ X = X ]
++ unset SHLIB_PATH
++ eval path_value='$LD_LIBRARY_PATH_32'
++ path_value=''
++ [ X = X ]
++ unset LD_LIBRARY_PATH_32
++ eval path_value='$LD_LIBRARY_PATH_64'
++ path_value=''
++ [ X = X ]
++ unset LD_LIBRARY_PATH_64
++ unset CUR_INSTNAME path_list class_list tmp_entry path_name path_value
++ DASWORKDIR=''
++ [ X != X ]
++ AddRemoveString PATH /candreports/db2inst2/sqllib/bin a
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/bin
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/bin"{print $0}'
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/bin
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin:
++ sed 's/\: /\:/g'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:
++ [ Xa = Xa ]
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin
++ unset var addrm_str awkval newval
++ AddRemoveString PATH /candreports/db2inst2/sqllib/adm a
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/adm
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/adm"{print $0}'
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/adm
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:\n/candreports/db2inst2/sqllib/bin:'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin: /candreports/db2inst2/sqllib/bin:
++ sed 's/\: /\:/g'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:
++ [ Xa = Xa ]
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm
++ unset var addrm_str awkval newval
++ AddRemoveString PATH /candreports/db2inst2/sqllib/misc a
++ [ 3 -ne 3 ]
++ var=PATH
++ addrm_str=/candreports/db2inst2/sqllib/misc
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/misc"{print $0}'
++ eval echo '${PATH:-}'
++ echo /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/misc
++ newval=$'/usr/kerberos/bin:\n/usr/local/bin:\n/bin:\n/usr/bin:\n/home/datareq/bin:\n/candreports/db2inst2/sqllib/bin:\n/candreports/db2inst2/sqllib/adm:'
++ echo /usr/kerberos/bin: /usr/local/bin: /bin: /usr/bin: /home/datareq/bin: /candreports/db2inst2/sqllib/bin: /candreports/db2inst2/sqllib/adm:
++ sed 's/\: /\:/g'
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm:
++ [ Xa = Xa ]
++ newval=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ eval PATH='"/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc"'
++ PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/datareq/bin:/candreports/db2inst2/sqllib/bin:/candreports/db2inst2/sqllib/adm:/candreports/db2inst2/sqllib/misc
++ unset var addrm_str awkval newval
++ export PATH
++ unset tmp_path
++ [ -f /candreports/db2inst2/dmb/dmbprofile ]
++ CLASSPATH=.
++ [ -f /candreports/db2inst2/sqllib/java/db2java.zip ]
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2java.zip a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2java.zip
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2java.zip"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo .
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2java.zip
++ newval=.:
++ sed 's/\: /\:/g'
++ newval=.:
++ [ Xa = Xa ]
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip
++ eval CLASSPATH='".:/candreports/db2inst2/sqllib/java/db2java.zip"'
++ CLASSPATH=.:/candreports/db2inst2/sqllib/java/db2java.zip
++ unset var addrm_str awkval newval
++ [ -f /candreports/db2inst2/sqllib/java/db2jcc.jar ]
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2jcc.jar a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2jcc.jar
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2jcc.jar"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2jcc.jar
++ eval echo '${CLASSPATH:-}'
++ echo .:/candreports/db2inst2/sqllib/java/db2java.zip
++ newval=$'.:\n/candreports/db2inst2/sqllib/java/db2java.zip:'
++ echo .: /candreports/db2inst2/sqllib/java/db2java.zip:
++ sed 's/\: /\:/g'
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:
++ [ Xa = Xa ]
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar
++ eval CLASSPATH='".:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar"'
++ CLASSPATH=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar
++ unset var addrm_str awkval newval
++ [ -f /candreports/db2inst2/sqllib/java/sqlj.zip ]
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/sqlj.zip a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/sqlj.zip
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/sqlj.zip"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo .:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/sqlj.zip
++ newval=$'.:\n/candreports/db2inst2/sqllib/java/db2java.zip:\n/candreports/db2inst2/sqllib/java/db2jcc.jar:'
++ sed 's/\: /\:/g'
++ echo .: /candreports/db2inst2/sqllib/java/db2java.zip: /candreports/db2inst2/sqllib/java/db2jcc.jar:
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:
++ [ Xa = Xa ]
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip
++ eval CLASSPATH='".:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip"'
++ CLASSPATH=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip
++ unset var addrm_str awkval newval
++ [ -d /candreports/db2inst2/sqllib/function ]
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/function a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/function
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/function"{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo .:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/function
++ newval=$'.:\n/candreports/db2inst2/sqllib/java/db2java.zip:\n/candreports/db2inst2/sqllib/java/db2jcc.jar:\n/candreports/db2inst2/sqllib/java/sqlj.zip:'
++ echo .: /candreports/db2inst2/sqllib/java/db2java.zip: /candreports/db2inst2/sqllib/java/db2jcc.jar: /candreports/db2inst2/sqllib/java/sqlj.zip:
++ sed 's/\: /\:/g'
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:
++ [ Xa = Xa ]
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function
++ eval CLASSPATH='".:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function"'
++ CLASSPATH=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function
++ unset var addrm_str awkval newval
++ [ -f /candreports/db2inst2/sqllib/java/db2jcc_license_cisuz.jar ]
++ [ -f /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar ]
++ AddRemoveString CLASSPATH /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ eval echo '${CLASSPATH:-}'
++ echo .:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function
++ newval=$'.:\n/candreports/db2inst2/sqllib/java/db2java.zip:\n/candreports/db2inst2/sqllib/java/db2jcc.jar:\n/candreports/db2inst2/sqllib/java/sqlj.zip:\n/candreports/db2inst2/sqllib/function:'
++ echo .: /candreports/db2inst2/sqllib/java/db2java.zip: /candreports/db2inst2/sqllib/java/db2jcc.jar: /candreports/db2inst2/sqllib/java/sqlj.zip: /candreports/db2inst2/sqllib/function:
++ sed 's/\: /\:/g'
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:
++ [ Xa = Xa ]
++ newval=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ eval CLASSPATH='".:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar"'
++ CLASSPATH=.:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ unset var addrm_str awkval newval
++ AddRemoveString CLASSPATH . a
++ [ 3 -ne 3 ]
++ var=CLASSPATH
++ addrm_str=.
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "."{print $0}'
++ eval echo '${CLASSPATH:-}'
++ echo .:/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=.
++ newval=$'/candreports/db2inst2/sqllib/java/db2java.zip:\n/candreports/db2inst2/sqllib/java/db2jcc.jar:\n/candreports/db2inst2/sqllib/java/sqlj.zip:\n/candreports/db2inst2/sqllib/function:\n/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:'
++ echo /candreports/db2inst2/sqllib/java/db2java.zip: /candreports/db2inst2/sqllib/java/db2jcc.jar: /candreports/db2inst2/sqllib/java/sqlj.zip: /candreports/db2inst2/sqllib/function: /candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:
++ [ Xa = Xa ]
++ newval=/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ eval CLASSPATH='"/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:."'
++ CLASSPATH=/candreports/db2inst2/sqllib/java/db2java.zip:/candreports/db2inst2/sqllib/java/db2jcc.jar:/candreports/db2inst2/sqllib/java/sqlj.zip:/candreports/db2inst2/sqllib/function:/candreports/db2inst2/sqllib/java/db2jcc_license_cu.jar:.
++ unset var addrm_str awkval newval
++ export CLASSPATH
++ LD_LIBRARY_PATH=''
++ AddRemoveString LD_LIBRARY_PATH /candreports/db2inst2/sqllib/lib64 a
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib64
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib64"{print $0}'
++ eval echo '${LD_LIBRARY_PATH:-}'
++ echo
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib64
++ newval=''
++ sed 's/\: /\:/g'
++ echo
++ newval=''
++ [ Xa = Xa ]
++ newval=/candreports/db2inst2/sqllib/lib64
++ eval LD_LIBRARY_PATH='"/candreports/db2inst2/sqllib/lib64"'
++ LD_LIBRARY_PATH=/candreports/db2inst2/sqllib/lib64
++ unset var addrm_str awkval newval
++ AddRemoveString LD_LIBRARY_PATH /candreports/db2inst2/sqllib/lib32 a
++ [ 3 -ne 3 ]
++ var=LD_LIBRARY_PATH
++ addrm_str=/candreports/db2inst2/sqllib/lib32
++ action=a
++ [ Xa != Xa -a Xa != Xr ]
++ awkval='$1 != "/candreports/db2inst2/sqllib/lib32"{print $0}'
++ awk '{for (i=1; i<= NF; ++i)           if( $i != VAR ) print $i":"}' FS=: VAR=/candreports/db2inst2/sqllib/lib32
++ eval echo '${LD_LIBRARY_PATH:-}'
++ echo /candreports/db2inst2/sqllib/lib64
++ newval=/candreports/db2inst2/sqllib/lib64:
++ echo /candreports/db2inst2/sqllib/lib64:
++ sed 's/\: /\:/g'
++ newval=/candreports/db2inst2/sqllib/lib64:
++ [ Xa = Xa ]
++ newval=/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ eval LD_LIBRARY_PATH='"/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32"'
++ LD_LIBRARY_PATH=/candreports/db2inst2/sqllib/lib64:/candreports/db2inst2/sqllib/lib32
++ unset var addrm_str awkval newval
++ export LD_LIBRARY_PATH
++ [ -f /candreports/db2inst2/sqllib/userprofile ]
++ . /candreports/db2inst2/sqllib/userprofile
++ cat /home/datareq/generic_etl/config/.ora_secret
++ grep -i ^tjcandb:
++ grep -i tcuser
++ cut -f3 -d:
++ user_pass=jobusr
++ now='date +%m%d%Y-%H%M%S'
++ db2 'connect to tjcandb user tcuser using jobusr'
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 9.1.0
+ SQL authorization ID   = TCUSER
+ Local database alias   = TJCANDB
+
++ db2 'set current schema tcuser'
+DB20000I  The SQL command completed successfully.
++ db2 -svf /home/datareq/generic_etl/sql_scripts/job_wise_applications.sql
++ 1> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log_sql
++ db2 commit
+DB20000I  The SQL command completed successfully.
++ db2 terminate
+DB20000I  The TERMINATE command completed successfully.
++ exit 0
++ exit_code=0
++ [[ 0 != 0 ]]
++ printf 'Processed SQL Script ...\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [ -r /home/datareq/generic_etl/ksh_scripts/post_job_wise_applications.ksh ]
++ [ == Y ]
+/home/datareq/generic_etl/ksh_scripts/generic_load_new.ksh[276]: [: argument expected
++ printf 'Processed post_job_wise_applications.ksh Script ...\n'
+Processed post_job_wise_applications.ksh Script ...
++ printf 'Processed post_job_wise_applications.ksh Script ...\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ [ '' == Y ]
++ [ Y == Y ]
++ printf 'send mail on completion of independent job\n'
++ 1>> /home/datareq/generic_etl/logs/job_wise_applications_12212015.log
++ date +%m/%d/%Y-%H:%M:%S
++ echo Job Wise Applications Job Finished at 12/21/2015-11:34:48
++ 1> /home/datareq/generic_etl/logs/dummy.txt
++ [[ sanjay.biswas@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com == '' ]]
++ /home/datareq/generic_etl/ksh_scripts/mail2 sanjay.biswas@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com 'Job Wise Applications Process Finished '
++ 0< /home/datareq/generic_etl/logs/dummy.txt
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=''
++ echo
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=''
++ [[ '' != '' ]]
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com ' Job Wise Applications Process Finished ' ''
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x128478b0)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x128478b0)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x128478b0)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x128478b0)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x128478b0)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x128478b0)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x128478b0)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x128478b0)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x128478b0)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x128478b0)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x128478b0)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x128478b0)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x128478b0)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x128478b0)>>> RCPT TO:<sandeep.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x128478b0)<<< 250 recipient <sandeep.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x128478b0)>>> DATA
+Net::SMTP=GLOB(0x128478b0)<<< 354 go ahead
+Net::SMTP=GLOB(0x128478b0)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x128478b0)>>> To: sanjay.biswas@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com,sandeep.singhal@timesgroup.com
+Net::SMTP=GLOB(0x128478b0)>>> To: 
+Net::SMTP=GLOB(0x128478b0)>>> Subject:  Job Wise Applications Process Finished 
+Net::SMTP=GLOB(0x128478b0)>>> .
+Net::SMTP=GLOB(0x128478b0)<<< 250 ok:  Message 997705486 accepted
+Net::SMTP=GLOB(0x128478b0)>>> QUIT
+Net::SMTP=GLOB(0x128478b0)<<< 221 ranchi.tbsl.in
++ exit 1
++ echo ' '
++ 1> /home/datareq/generic_etl/logs/dummy.txt
++ touch /home/dwload/generic_etl/job_complete/job_wise_applications.done
+touch: cannot touch `/home/dwload/generic_etl/job_complete/job_wise_applications.done': No such file or directory
++ [[ 11:34:32 > 23:50:00 ]]
++ exit 0
