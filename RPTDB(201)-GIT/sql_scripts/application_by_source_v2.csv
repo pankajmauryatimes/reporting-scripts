@@ -1,0 +1,74 @@
+"Web","Email Application","email_apply_bucket","",9,0
+"Web","Email Application","EMAIL","Apply by email",3,0
+"Web","Job application confirmation","APLCNF_REC","Application confirmation page reco",9672,3920
+"Web","Job Alert","TJAJD","Alert job detail",2509,22377
+"Web","Job Alert","TJAJD_LKD_LOG","Job Alert Linkedin Login",0,1
+"Web","Job Alert","TJMLR","Alert Mailer express apply",6772,0
+"Web","Job Detail Page","EJM","Email job mailer",25,0
+"Web","Job Detail Page","REC_RPN_JD","Job Detail page right side reco",825,198
+"Web","Job Detail Page","SIMJ_JD","Job details bottom Siimilar job",502,1689
+"Web","Job Detail Page","TJCAND","",0,154
+"Web","Job Detail Page","TJCAND_SJM","Similar jobs",808,0
+"Web","Job Detail Page","TJJD","Job Detail page",6303,7468
+"Web","Job Detail Page","TJJD_LKD_LOG","Job Detail Linked in login",15,4
+"Web","Job Detail Page","TJJD_LKD_REG","Job Detail Linked in reg.",21,3
+"Web","Job Detail Page","TJLKD","JD Linkedin",12,4
+"Web","Job Detail Page","TJLKD_LKD_LOG","",40,49
+"Web","Job Detail Page","TJLKD_LKD_REG","",46,23
+"Web","Jobbuzz","Jobbuzz","Job Buzz",172,122
+"Web","Mass mails","TJMLR_HIRE","Hire mailer",49,0
+"Web","My TJ","RECJOB","Reco. Jobs",123,220
+"Web","My TJ","TJPF","My TJ reco.",1593,1500
+"Web","My TJ","TJPFBJ","Who applied",1540,394
+"Web","My TJ","TJPFRV","Recently viewed from My TJ",89,73
+"Web","My TJ","TJPFSJ","Shortlisted job",5,13
+"Web","Notification","TJ_INBOX","Inbox",1819,2148
+"Web","Search Result Page","TJPFSRP","Personalized SRP",7646,3044
+"Web","Search Result Page","TJSRP","Old SRP",92,0
+"Web","Search Result Page","TJSRP_MULTI","Old SRP multi select",126,0
+"Web","SEO pages","TJSEO","SEO",3509,270
+"Web","Techgig","TG","TechGig",257,0
+"Web","Third Party","REFERRAL","",2678,5496
+"Web","Third Party","REFERRAL_LKD_LOG","",33,106
+"Web","Third Party","REFERRAL_LKD_REG","",18,13
+"Web","** TOTAL **","-------","-------",47311,49289
+"MOBILE","Android","TJANDRD","",669,1019
+"MOBILE","Android","TJANDRD_JA_EMPLOYER","",984,2379
+"MOBILE","Android","TJANDRD_JA_NOTIFI","",417,1110
+"MOBILE","Android","TJANDRD_JOB_FA","",3,0
+"MOBILE","Android","TJANDRD_JOB_LOC","",7,0
+"MOBILE","Android","TJANDRD_JOB_SKILL","",70,21
+"MOBILE","Android","TJANDRD_JOBDET","",2252,1718
+"MOBILE","Android","TJANDRD_JOBDET_SIMJOB","",23,5
+"MOBILE","Android","TJANDRD_LAST_SR","",0,1
+"MOBILE","Android","TJANDRD_RECO","",690,270
+"MOBILE","Android","TJANDRD_SIMJOB","",146,6
+"MOBILE","Android","TJANDRD_SRP","",2301,350
+"MOBILE","IOS","TJIOS","",27,28
+"MOBILE","IOS","TJIOS_JA_EMPLOYER","",2,0
+"MOBILE","IOS","TJIOS_JA_NOTIFI","",141,410
+"MOBILE","IOS","TJIOS_JOB_FA","",3,8
+"MOBILE","IOS","TJIOS_JOB_LOC","",15,2
+"MOBILE","IOS","TJIOS_JOB_SKILL","",98,3
+"MOBILE","IOS","TJIOS_JOBDET","",138,124
+"MOBILE","IOS","TJIOS_JOBDET_SIMJOB","",12,4
+"MOBILE","IOS","TJIOS_RECO","",111,37
+"MOBILE","IOS","TJIOS_SRP","",260,83
+"MOBILE","IOS","TJIOS(NULL)","",37,0
+"MOBILE","J2ME","TJ_J2ME","J2ME",3,0
+"MOBILE","WAP","TJMOB","Mob My TJ",3978,123
+"MOBILE","WAP","TJMOB_JA_EMPLOYER","",1,0
+"MOBILE","WAP","TJMOB_JA_NOTIFI","Mob notification",33,128
+"MOBILE","WAP","TJMOB_JOB_FA","Function",26,0
+"MOBILE","WAP","TJMOB_JOB_LOC","Location",42,0
+"MOBILE","WAP","TJMOB_JOB_SKILL","Skills",123,18
+"MOBILE","WAP","TJMOB_JOBDET","Mob Job details",4253,15163
+"MOBILE","WAP","TJMOB_JOBDET_SIMJOB","Mob Job details Similar",29,9
+"MOBILE","WAP","TJMOB_LAST_SR","Mob Last applied job",3,3
+"MOBILE","WAP","TJMOB_RECO","Mob Reco",5080,144
+"MOBILE","WAP","TJMOB_SRP","Mob SRP",332,180
+"MOBILE","** TOTAL **","-------","-------",22309,23346
+"OTHER","Others","null","",9,0
+"OTHER","Others","undefined","",0,6
+"OTHER",,"",,0,3
+"OTHER","** TOTAL **","-------","-------",9,9

@@ -1,0 +1,1 @@
+export to /home/datareq/generic_etl/wip/remove_suggested_job.csv of del modified by coldel, datesiso select A.ID, A.LOGIN_ID, A.RESUME_ID, A.JOB_ID, A.UNDO, A.TIME, A.REASON, A.FEATURE from REMOVE_SUGGESTED_JOB A where A.TIME between char(current date - 1 day,ISO)||' 00:00:00' and char(current date - 1 day,ISO)||' 23:59:59' with ur

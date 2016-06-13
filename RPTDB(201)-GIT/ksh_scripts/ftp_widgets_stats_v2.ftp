@@ -1,0 +1,25 @@
+#!/bin/sh
+HOST='172.16.84.220'
+USER='dwhuser'
+PASSWD='dwhuser'
+ftp -in $HOST <<EOF
+quote USER $USER
+quote PASS $PASSWD
+binary
+pwd
+cd /home/dwhuser/generic_etl/wip 
+pwd
+mdel WIDGET*
+del new_resume_profile_complete_fact.txt
+del edit_resume_profile_complete_fact.txt
+del edit_resume_profile_complete_widgets_dist_fact.txt
+del new_resume_profile_complete_widgets_dist_fact.txt
+mput WIDGET*
+put new_resume_profile_complete_fact.txt
+put edit_resume_profile_complete_fact.txt 
+put edit_resume_profile_complete_widgets_dist_fact.txt
+put new_resume_profile_complete_widgets_dist_fact.txt
+put widgets_stats_${pth}.done
+quit
+EOF
+

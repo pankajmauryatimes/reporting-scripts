@@ -1,0 +1,75 @@
+#!/bin/ksh
+
+set +x
+
+cd $HOME/generic_etl/wip
+server=$1
+user=dwhuser
+file_name=$2
+
+if [[ $server == 'DWH' ]]
+then
+     ip=115.112.206.220
+     ip2=172.16.84.220
+     pswd=dwhuser
+     ftp_dir=/home/dwhuser/generic_etl/wip
+elif [[ $server == 'IMT' ]]
+then
+     ip=180.179.57.140
+     user=ftpupload
+     pswd=ftp@upload123
+     ftp_dir=/ndata/resources/ecm-batch/data/csLeadMailer/source/
+elif [[ $server == 'IMTC' ]]
+then
+     ip=115.112.206.85
+     #user=root
+     #user=sanjay
+     user=dbuser
+     #pswd=tooroot
+      pswd=dbuser
+     ftp_dir=/ndata/resources/ecm-batch/data/csLeadMailer/source/
+
+fi
+
+ftp_file=$HOME/generic_etl/wip/scp_file.ftp
+echo "#!/bin/ksh" > $ftp_file
+echo "HOST=$ip" >> $ftp_file
+echo "USER=$user" >> $ftp_file
+echo "PASSWD=$pswd" >> $ftp_file
+echo "ftp -in \$HOST <<EOF" >> $ftp_file
+echo "quote USER \$USER" >> $ftp_file
+echo "quote PASS \$PASSWD" >> $ftp_file
+echo "binary" >> $ftp_file
+echo "cd $ftp_dir" >> $ftp_file
+echo "pwd" >> $ftp_file
+echo "put $file_name" >> $ftp_file
+echo "EOF" >> $ftp_file
+#execute FTP script
+chmod 755 ${ftp_file}
+. ${ftp_file}
+
+if [[ $server == 'DWH' ]]
+then
+
+ftp_file=$HOME/generic_etl/wip/scp_file.ftp
+echo "#!/bin/ksh" > $ftp_file
+echo "HOST=$ip2" >> $ftp_file
+echo "USER=$user" >> $ftp_file
+echo "PASSWD=$pswd" >> $ftp_file
+echo "ftp -in \$HOST <<EOF" >> $ftp_file
+echo "quote USER \$USER" >> $ftp_file
+echo "quote PASS \$PASSWD" >> $ftp_file
+echo "binary" >> $ftp_file
+echo "cd $ftp_dir" >> $ftp_file
+echo "pwd" >> $ftp_file
+echo "put $file_name" >> $ftp_file
+echo "EOF" >> $ftp_file
+#execute FTP script
+chmod 755 ${ftp_file}
+. ${ftp_file}
+
+fi
+
+
+cd -
+

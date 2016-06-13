@@ -1,0 +1,15 @@
+#!/bin/sh
+HOST='115.112.206.220'
+USER='dwhuser'
+PASSWD='dwhuser'
+ftp -in $HOST <<EOF
+quote USER $USER
+quote PASS $PASSWD
+pwd
+cd /home/dwhuser/generic_etl/wip 
+pwd
+del LOGIN_USAGE_HISTORY.txt 
+put LOGIN_USAGE_HISTORY.txt
+put login_usage_history_${pth}.done
+quit
+EOF

@@ -1,0 +1,47 @@
+SQL3132W  The character data in column "PREF_LOCATION" will be truncated to 
+size "32700".
+
+SQL3132W  The character data in column "FUNCTIONAL_AREA" will be truncated to 
+size "32700".
+
+SQL3104N  The Export utility is beginning to export data to file 
+"/rptbackup/gaurav/resume_zapper_ixf.ixf".
+
+SQL27984W Some information has not been saved to the PC/IXF file during 
+Export. This file will not be supported in Import CREATE mode. Reason 
+code="7".
+
+SQL3132W  The character data in column "EMAIL_ID" will be truncated to size 
+"128".
+
+SQL3132W  The character data in column "PRODUCT_TYPE" will be truncated to 
+size "1".
+
+SQL3132W  The character data in column "COMPANY_NAME" will be truncated to 
+size "64".
+
+SQL3132W  The character data in column "PREF_LOCATION" will be truncated to 
+size "32700".
+
+SQL3132W  The character data in column "FUNCTIONAL_AREA" will be truncated to 
+size "32700".
+
+SQL3132W  The character data in column "CONTACT_PERSON" will be truncated to 
+size "128".
+
+SQL3132W  The character data in column "ADDRESS" will be truncated to size 
+"128".
+
+SQL3132W  The character data in column "MOBILE_NO" will be truncated to size 
+"48".
+
+SQL3132W  The character data in column "SOURCE" will be truncated to size "2".
+
+SQL3132W  The character data in column "DELETED" will be truncated to size 
+"1".
+
+SQL3105N  The Export utility has finished exporting "3304" rows.
+
+
+Number of rows exported: 3304
+

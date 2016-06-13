@@ -1,0 +1,2 @@
+export to /home/datareq/generic_etl/logs/Alert_Process_monitor_job_not_running.txt of del modified by coldel, datesiso select A.description, A.alertcombination_id from tcadmin.alert_combination A where A.alertcombination_id NOT IN (select mt.combination_id from mail_track mt where mt.CREATE_DATETIME between current timestamp - 1 hour and current timestamp group by mt.combination_id ) and A.alertcombination_id IN (20000,20500,21000,1009,1005) with ur
+

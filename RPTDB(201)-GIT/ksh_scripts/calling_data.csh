@@ -1,0 +1,9 @@
+#!/bin/bash
+
+db2 "connect to tjrptdb user tcuser using jobusr"
+db2 "set current schema tcuser"
+
+db2  "export to /home/datareq/generic_etl/data_files/Vivek_CS_Analysis_data_${today}.csv of del modified by coldel, datesiso select u.TEL_OTHER, u.Login_id, u.login_create_date, rra.AD_ID, rra.WORK_EXP, rra.PRES_SALARY,(select replace(replace(xml2clob(xmlagg(xmlelement(NAME a, (FM.FUNCTIONAL_NAME )))),'<A>',''),'</A>',', ') from tcadmin.RCRT_FUNCTIONAL_MAS FM where locate(trim(char(FM.FUNCTIONAL_ID)),rra.DESCRIPTION_COMMENT) <> 0) AS Functional_Area, (select LM.LOCATION_NAME from tcadmin.RCRT_LOCATION_MAS LM where LM.LOCATION_ID = rra.loc_city) AS Location, u.GENDER, (select count(RESUME_ID) from RESUME_VIEWED_EMPLOYER rve where rve.RESUME_ID=rra.ad_id and view_time between '2012-01-01-00.00.00.000000' and '2012-03-01-00.00.00.000000') as Resume_views, u.IS_MOBILE_VERIFIED as Number_Verified , case when lc.AD_ID is null then 'Direct' else 'Paid' end as Google_Paid_Direct, (select count(1) from JOB_VIEWED_CANDIDATE A where A.LOGIN_SRL_NO = U.LOGIN_SRL_NO and A.VIEW_TIME between '2012-01-01-00.00.00.000000' and '2012-03-01-00.00.00.000000') as Job_views, (select count(1) from SITE_INBOX_RESPONSE A where A.resume_id = ua.AD_ID and A.date_responded between '2012-01-01' AND '2012-03-01') as Applications, (select count(1) from CS_WISHLIST CW where CW.LOGIN_SRL_NO = U.LOGIN_SRL_NO) as Shows_interest_in_CS_product from tcuser.calling_data_new cdn      left join tcuser.USER u on (cdn.LOGIN_ID = u.LOGIN_ID)      left join tcuser.USER_AD ua on (ua.LOGIN_SRL_NO = u.LOGIN_SRL_NO)      left join tcuser.RCRT_RESUME_ADS rra on (rra.AD_ID = ua.AD_ID)      left join LEAD_CAPTURE lc on (lc.AD_ID=rra.AD_ID) where u.agent = 'I' and ua.sub_cat_id = 2711 and rra.view IN ('Y','Y') with ur " 
+
+db2 "terminate"
+

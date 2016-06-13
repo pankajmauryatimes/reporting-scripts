@@ -1,0 +1,321 @@
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 9.1.0
+ SQL authorization ID   = TCUSER
+ Local database alias   = TJRPTDB
+
+DB20000I  The SQL command completed successfully.
+DB Connected
+----------- F1 Process Begin ----------
+LOG FILE:/home/datareq/generic_etl/logs/promotional_data_v2_F1_03162016-104131.log
+KERBEROS_V4 rejected as an authentication type
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n\nData has been sent for work exp 2-3:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Promotional Data has been sent for Process (F1) ' $'Hi,\n\nData has been sent for work exp 2-3:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x17a41e60)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x17a41e60)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x17a41e60)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x17a41e60)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x17a41e60)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x17a41e60)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x17a41e60)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x17a41e60)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x17a41e60)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x17a41e60)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0x17a41e60)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0x17a41e60)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x17a41e60)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x17a41e60)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x17a41e60)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x17a41e60)>>> DATA
+Net::SMTP=GLOB(0x17a41e60)<<< 354 go ahead
+Net::SMTP=GLOB(0x17a41e60)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x17a41e60)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0x17a41e60)>>> To: 
+Net::SMTP=GLOB(0x17a41e60)>>> Subject:  Promotional Data has been sent for Process (F1) 
+Net::SMTP=GLOB(0x17a41e60)>>> Hi,
+Net::SMTP=GLOB(0x17a41e60)>>> 
+Net::SMTP=GLOB(0x17a41e60)>>> Data has been sent for work exp 2-3:(Sent 200001 data point)
+Net::SMTP=GLOB(0x17a41e60)>>> 
+Net::SMTP=GLOB(0x17a41e60)>>> Thanks,
+Net::SMTP=GLOB(0x17a41e60)>>> RPT SERVER
+Net::SMTP=GLOB(0x17a41e60)>>> .
+Net::SMTP=GLOB(0x17a41e60)<<< 250 ok:  Message 1186919643 accepted
+Net::SMTP=GLOB(0x17a41e60)>>> QUIT
+Net::SMTP=GLOB(0x17a41e60)<<< 221 ranchi.tbsl.in
++ exit 1
+----------- F1 Process End ------------
+
+----------- F2 Process Begin ----------
+LOG FILE:/home/datareq/generic_etl/logs/promotional_data_v2_F2_03162016-104440.log
+KERBEROS_V4 rejected as an authentication type
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n\nData has been sent for work exp 4-6:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Promotional Data has been sent for Process (F2) ' $'Hi,\n\nData has been sent for work exp 4-6:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x136bae60)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x136bae60)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x136bae60)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x136bae60)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x136bae60)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x136bae60)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x136bae60)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x136bae60)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x136bae60)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x136bae60)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0x136bae60)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0x136bae60)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x136bae60)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x136bae60)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x136bae60)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x136bae60)>>> DATA
+Net::SMTP=GLOB(0x136bae60)<<< 354 go ahead
+Net::SMTP=GLOB(0x136bae60)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x136bae60)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0x136bae60)>>> To: 
+Net::SMTP=GLOB(0x136bae60)>>> Subject:  Promotional Data has been sent for Process (F2) 
+Net::SMTP=GLOB(0x136bae60)>>> Hi,
+Net::SMTP=GLOB(0x136bae60)>>> 
+Net::SMTP=GLOB(0x136bae60)>>> Data has been sent for work exp 4-6:(Sent 200001 data point)
+Net::SMTP=GLOB(0x136bae60)>>> 
+Net::SMTP=GLOB(0x136bae60)>>> Thanks,
+Net::SMTP=GLOB(0x136bae60)>>> RPT SERVER
+Net::SMTP=GLOB(0x136bae60)>>> .
+Net::SMTP=GLOB(0x136bae60)<<< 250 ok:  Message 1186923713 accepted
+Net::SMTP=GLOB(0x136bae60)>>> QUIT
+Net::SMTP=GLOB(0x136bae60)<<< 221 ranchi.tbsl.in
++ exit 1
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n     \n     Data is available for this process:489690\n     -Be ready to load fresh data for F2\n     \n     Thanks,\n     RPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Be Ready to Load Fresh Data for One Year Freshness(F2)' $'Hi,\n     \n     Data is available for this process:489690\n     -Be ready to load fresh data for F2\n     \n     Thanks,\n     RPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x1bf23ea0)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x1bf23ea0)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x1bf23ea0)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x1bf23ea0)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x1bf23ea0)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0x1bf23ea0)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x1bf23ea0)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x1bf23ea0)>>> DATA
+Net::SMTP=GLOB(0x1bf23ea0)<<< 354 go ahead
+Net::SMTP=GLOB(0x1bf23ea0)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x1bf23ea0)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0x1bf23ea0)>>> To: 
+Net::SMTP=GLOB(0x1bf23ea0)>>> Subject:  Be Ready to Load Fresh Data for One Year Freshness(F2)
+Net::SMTP=GLOB(0x1bf23ea0)>>> Hi,
+Net::SMTP=GLOB(0x1bf23ea0)>>>      
+Net::SMTP=GLOB(0x1bf23ea0)>>>      Data is available for this process:489690
+Net::SMTP=GLOB(0x1bf23ea0)>>>      -Be ready to load fresh data for F2
+Net::SMTP=GLOB(0x1bf23ea0)>>>      
+Net::SMTP=GLOB(0x1bf23ea0)>>>      Thanks,
+Net::SMTP=GLOB(0x1bf23ea0)>>>      RPT SERVER
+Net::SMTP=GLOB(0x1bf23ea0)>>> .
+Net::SMTP=GLOB(0x1bf23ea0)<<< 250 ok:  Message 1186923732 accepted
+Net::SMTP=GLOB(0x1bf23ea0)>>> QUIT
+Net::SMTP=GLOB(0x1bf23ea0)<<< 221 ranchi.tbsl.in
++ exit 1
+KERBEROS_V4 rejected as an authentication type
+----------- F2 Process End ------------
+
+----------- F21 Process Begin ----------
+LOG FILE:/home/datareq/generic_etl/logs/promotional_data_v2_F21_03162016-104651.log
+KERBEROS_V4 rejected as an authentication type
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n\nData has been sent for work exp 7-9:(Sent 150001 data point)\n\nThanks,\nRPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Promotional Data has been sent for Process (F21) ' $'Hi,\n\nData has been sent for work exp 7-9:(Sent 150001 data point)\n\nThanks,\nRPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x1fdcfe60)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x1fdcfe60)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x1fdcfe60)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x1fdcfe60)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x1fdcfe60)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0x1fdcfe60)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x1fdcfe60)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x1fdcfe60)>>> DATA
+Net::SMTP=GLOB(0x1fdcfe60)<<< 354 go ahead
+Net::SMTP=GLOB(0x1fdcfe60)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x1fdcfe60)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0x1fdcfe60)>>> To: 
+Net::SMTP=GLOB(0x1fdcfe60)>>> Subject:  Promotional Data has been sent for Process (F21) 
+Net::SMTP=GLOB(0x1fdcfe60)>>> Hi,
+Net::SMTP=GLOB(0x1fdcfe60)>>> 
+Net::SMTP=GLOB(0x1fdcfe60)>>> Data has been sent for work exp 7-9:(Sent 150001 data point)
+Net::SMTP=GLOB(0x1fdcfe60)>>> 
+Net::SMTP=GLOB(0x1fdcfe60)>>> Thanks,
+Net::SMTP=GLOB(0x1fdcfe60)>>> RPT SERVER
+Net::SMTP=GLOB(0x1fdcfe60)>>> .
+Net::SMTP=GLOB(0x1fdcfe60)<<< 250 ok:  Message 1186925137 accepted
+Net::SMTP=GLOB(0x1fdcfe60)>>> QUIT
+Net::SMTP=GLOB(0x1fdcfe60)<<< 221 ranchi.tbsl.in
++ exit 1
+----------- F21 Process End ------------
+
+----------- F4 Process Begin ----------
+LOG FILE:/home/datareq/generic_etl/logs/promotional_data_v2_F4_03162016-104811.log
+KERBEROS_V4 rejected as an authentication type
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n\nData has been sent for work exp 10+:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Promotional Data has been sent for Process (F4) ' $'Hi,\n\nData has been sent for work exp 10+:(Sent 200001 data point)\n\nThanks,\nRPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x19465e60)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0x19465e60)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0x19465e60)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0x19465e60)<<< 250-8BITMIME
+Net::SMTP=GLOB(0x19465e60)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0x19465e60)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0x19465e60)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0x19465e60)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0x19465e60)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0x19465e60)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0x19465e60)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0x19465e60)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0x19465e60)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0x19465e60)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0x19465e60)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0x19465e60)>>> DATA
+Net::SMTP=GLOB(0x19465e60)<<< 354 go ahead
+Net::SMTP=GLOB(0x19465e60)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0x19465e60)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0x19465e60)>>> To: 
+Net::SMTP=GLOB(0x19465e60)>>> Subject:  Promotional Data has been sent for Process (F4) 
+Net::SMTP=GLOB(0x19465e60)>>> Hi,
+Net::SMTP=GLOB(0x19465e60)>>> 
+Net::SMTP=GLOB(0x19465e60)>>> Data has been sent for work exp 10+:(Sent 200001 data point)
+Net::SMTP=GLOB(0x19465e60)>>> 
+Net::SMTP=GLOB(0x19465e60)>>> Thanks,
+Net::SMTP=GLOB(0x19465e60)>>> RPT SERVER
+Net::SMTP=GLOB(0x19465e60)>>> .
+Net::SMTP=GLOB(0x19465e60)<<< 250 ok:  Message 1186927514 accepted
+Net::SMTP=GLOB(0x19465e60)>>> QUIT
+Net::SMTP=GLOB(0x19465e60)<<< 221 ranchi.tbsl.in
++ exit 1
+----------- F4 Process End ------------
+
+----------- F9 Process Begin ----------
+LOG FILE:/home/datareq/generic_etl/logs/promotional_data_v2_F9_03162016-105002.log
+KERBEROS_V4 rejected as an authentication type
++ cd /home/datareq/generic_etl/ksh_scripts
++ input=/home/datareq/generic_etl/wip/mail_body.txt
++ echo /home/datareq/generic_etl/wip/mail_body.txt
++ egrep -i '\.txt|\.log|\.cron'
++ isFile=/home/datareq/generic_etl/wip/mail_body.txt
++ [[ /home/datareq/generic_etl/wip/mail_body.txt != '' ]]
++ cat /home/datareq/generic_etl/wip/mail_body.txt
++ input_file=$'Hi,\n\nData has been sent for work exp 0-99:(Sent 100001 data point)\n\nThanks,\nRPT SERVER'
++ perl /home/datareq/generic_etl/ksh_scripts/mail2.pl sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com ' Promotional Data has been sent for Process (F9) ' $'Hi,\n\nData has been sent for work exp 0-99:(Sent 100001 data point)\n\nThanks,\nRPT SERVER'
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0xd388e60)<<< 220 ranchi.tbsl.in ESMTP
+Net::SMTP=GLOB(0xd388e60)>>> EHLO Ranchi.tbsl.in
+Net::SMTP=GLOB(0xd388e60)<<< 250-ranchi.tbsl.in
+Net::SMTP=GLOB(0xd388e60)<<< 250-8BITMIME
+Net::SMTP=GLOB(0xd388e60)<<< 250 SIZE 20971520
+Net::SMTP=GLOB(0xd388e60)>>> MAIL FROM:<RPD_DB@timesjobs.com>
+Net::SMTP=GLOB(0xd388e60)<<< 250 sender <RPD_DB@timesjobs.com> ok
+Net::SMTP=GLOB(0xd388e60)>>> RCPT TO:<sanjay.biswas@timesgroup.com>
+Net::SMTP=GLOB(0xd388e60)<<< 250 recipient <sanjay.biswas@timesgroup.com> ok
+Net::SMTP=GLOB(0xd388e60)>>> RCPT TO:<shashank.pandey@timesgroup.com>
+Net::SMTP=GLOB(0xd388e60)<<< 250 recipient <shashank.pandey@timesgroup.com> ok
+Net::SMTP=GLOB(0xd388e60)>>> RCPT TO:<amit.singhal@timesgroup.com>
+Net::SMTP=GLOB(0xd388e60)<<< 250 recipient <amit.singhal@timesgroup.com> ok
+Net::SMTP=GLOB(0xd388e60)>>> RCPT TO:<gaurav.kumar2@timesgroup.com>
+Net::SMTP=GLOB(0xd388e60)<<< 250 recipient <gaurav.kumar2@timesgroup.com> ok
+Net::SMTP=GLOB(0xd388e60)>>> DATA
+Net::SMTP=GLOB(0xd388e60)<<< 354 go ahead
+Net::SMTP=GLOB(0xd388e60)>>> From: RPD_DB@timesjobs.com
+Net::SMTP=GLOB(0xd388e60)>>> To: sanjay.biswas@timesgroup.com,shashank.pandey@timesgroup.com,amit.singhal@timesgroup.com,gaurav.kumar2@timesgroup.com
+Net::SMTP=GLOB(0xd388e60)>>> To: 
+Net::SMTP=GLOB(0xd388e60)>>> Subject:  Promotional Data has been sent for Process (F9) 
+Net::SMTP=GLOB(0xd388e60)>>> Hi,
+Net::SMTP=GLOB(0xd388e60)>>> 
+Net::SMTP=GLOB(0xd388e60)>>> Data has been sent for work exp 0-99:(Sent 100001 data point)
+Net::SMTP=GLOB(0xd388e60)>>> 
+Net::SMTP=GLOB(0xd388e60)>>> Thanks,
+Net::SMTP=GLOB(0xd388e60)>>> RPT SERVER
+Net::SMTP=GLOB(0xd388e60)>>> .
+Net::SMTP=GLOB(0xd388e60)<<< 250 ok:  Message 1186932934 accepted
+Net::SMTP=GLOB(0xd388e60)>>> QUIT
+Net::SMTP=GLOB(0xd388e60)<<< 221 ranchi.tbsl.in
++ exit 1
+----------- F9 Process End ------------
+
+DB20000I  The SQL command completed successfully.
+DB20000I  The TERMINATE command completed successfully.
+Batch Process Finished

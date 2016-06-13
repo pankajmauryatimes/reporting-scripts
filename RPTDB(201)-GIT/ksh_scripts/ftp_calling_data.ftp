@@ -1,0 +1,15 @@
+#!/bin/sh
+HOST='115.112.206.221'
+USER='datareq'
+PASSWD='datareq'
+ftp -in $HOST <<EOF
+quote USER $USER
+quote PASS $PASSWD
+binary
+pwd
+cd $today
+pwd
+put Vivek_CS_Analysis_data_${today}.csv 
+quit
+EOF
+
