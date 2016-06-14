@@ -1,0 +1,5 @@
+bounce_email.ksh: line 12: set: -A: invalid option
+set: usage: set [--abefhkmnptuvxBCHP] [-o option] [arg ...]
+./bounce_email.ksh[21]: [: argument expected
+count(1336019 2014_12_23_toemail.txt)
+2014_12_23_toemail.txt
